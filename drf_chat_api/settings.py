@@ -175,3 +175,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # user 모델 지정
 AUTH_USER_MODEL = 'users.MyUser'
+
+
+# django channels setting
+ASGI_APPLICATION = "ChatAPI.asgi.application"
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
