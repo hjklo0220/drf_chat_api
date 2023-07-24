@@ -50,16 +50,25 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # new
+    'django.contrib.sites',
 
     # Add modules
     'rest_framework',
     'corsheaders',
     'channels',
+    'rest_framework.authtoken',
+    'dj_rest_auth',
+    'dj_rest_auth.registration',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 
     # Add App
     'users',
 ]
 
+SITE_ID = 1
 
 # Add corsheaders.middleware.CorsMiddleware to MIDDLEWARD
 MIDDLEWARE = [
