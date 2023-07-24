@@ -66,6 +66,7 @@ INSTALLED_APPS = [
 
     # Add App
     'users',
+    'chat',
 ]
 
 SITE_ID = 1
